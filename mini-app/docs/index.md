@@ -1,5 +1,9 @@
 # Index
 
+## Instructions
+
+You will be editing this farcaster nextjs mini app using shadcn components with tailwind based on the the provided instructions. Do not alter files except if necessary to perform the instructions. Read the documents listed bellow when writing any code provided by the respective library.
+
 ## Framework
 
 This app uses the [nextjs](./nextjs.md) framework.
