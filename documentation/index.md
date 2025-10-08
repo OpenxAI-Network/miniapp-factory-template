@@ -2,7 +2,7 @@
 
 ## Instructions
 
-You will be editing this farcaster nextjs mini app using shadcn components with tailwind based on the the provided instructions. Do not alter files except if necessary to perform the instructions. Read the documents listed bellow when writing any code provided by the respective library. On the first user request, also update the [title and description](../mini-app/lib/metadata.ts) based on a summary of the app instructions. When adding or removing pages, update the [header](../mini-app/components/header.tsx) in case they should be added or removed from navigation.
+You will be editing this farcaster nextjs mini app using shadcn components with tailwind based on the the provided instructions. Read the documents listed bellow when writing any code provided by the respective library. On the first user request, also update the [title and description](../mini-app/lib/metadata.ts) based on a summary of the app instructions. When adding or removing pages, update the [header](../mini-app/components/header.tsx) in case they should be added or removed from navigation. Use the [home page](../mini-app/app/page.tsx) for the main app functionality. Use existing components such as [Share](../mini-app/components/share.tsx) and those in [the UI folder](../mini-app/components/ui) when possible, do not alter these files.
 
 ## Framework
 
