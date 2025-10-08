@@ -1,6 +1,6 @@
-## Xnode Mini App Template
+## Mini App Factory Template
 
-Template to make your mini app Xnode/Nix compatible.
+This app has been created by the [OpenxAI miniapp-factory](https://miniapp-factory.marketplace.openxai.network).
 
 ## Commands (in root folder)
 

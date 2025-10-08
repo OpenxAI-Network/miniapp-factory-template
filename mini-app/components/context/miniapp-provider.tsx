@@ -44,7 +44,7 @@ export function MiniAppProvider({ children }: { children: React.ReactNode }) {
     };
 
     ready();
-  }, []);
+  }, [context]);
 
   return (
     <MiniAppContext.Provider value={context}>
