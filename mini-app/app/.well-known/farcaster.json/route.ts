@@ -1,9 +1,8 @@
-import { title } from "@/lib/metadata";
+import { title, url } from "@/lib/metadata";
 
 export const dynamic = "force-dynamic";
 
 export async function GET() {
-  const appUrl = process.env.NEXT_PUBLIC_URL;
   const accountAssociation = JSON.parse(
     process.env.ACCOUNT_ASSOCIATION ??
       JSON.stringify({
@@ -25,13 +24,13 @@ export async function GET() {
     miniapp: {
       version: "1",
       name: title,
-      iconUrl: `${appUrl}/icon.png`,
-      homeUrl: appUrl,
-      imageUrl: `${appUrl}/icon.png`,
+      iconUrl: `${url}/icon.png`,
+      homeUrl: url,
+      imageUrl: `${url}/icon.png`,
       buttonTitle: "Launch Mini App",
-      splashImageUrl: `${appUrl}/ico.png`,
+      splashImageUrl: `${url}/ico.png`,
       splashBackgroundColor: "#000000",
-      webhookUrl: `${appUrl}/api/webhook`,
+      webhookUrl: `${url}/api/webhook`,
     },
   };
 

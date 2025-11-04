@@ -13,9 +13,9 @@
 # EXTRA IMPORTANT INSTRUCTIONS
 
 - ALWAYS include the [url](../mini-app/lib/metadata.ts) into the share text.
-- Add the main app function to the [home page](../mini-app/app/page.tsx). ALWAYS read this file to check if to add the content to this page or if a new page should be created.
-- Ensure that the [title and description](../mini-app/lib/metadata.ts) match the current functionality of the app. Also update [the app logo](../mini-app/public/icon.png.todo) to properly represent the app. ALWAYS read these files and ensure they match the app.
-- ALWAYS commit something to perform the request to the best of your abilities, do not wait for answers to follow up questions.
+- ALWAYS add new functionality to the [home page](../mini-app/app/page.tsx).
+- ALWAYS ensure that the [title and description](../mini-app/lib/metadata.ts) and [the app logo](../mini-app/public/icon.png.todo) match and properly represent the current functionality of the app.
+- ALWAYS perform the request to the best of your abilities and commit something, do not wait for answers to follow up questions.
 
 ## Image generation example
 
