@@ -3,7 +3,13 @@
 import { useMiniAppContext } from "./context/miniapp-provider";
 import { Button } from "./ui/button";
 
-export function Share({ text }: { text: string }) {
+export function Share({
+  text,
+  className,
+}: {
+  text: string;
+  className?: string;
+}) {
   const { sdk, isInMiniApp } = useMiniAppContext();
 
   if (!isInMiniApp) {
@@ -12,13 +18,16 @@ export function Share({ text }: { text: string }) {
 
   return (
     <Button
+      className={className}
       onClick={() => {
         sdk.actions.composeCast({
           text,
         });
       }}
     >
-      <span>Share</span>
+      Share
     </Button>
   );
 }
+
+export default Share;
