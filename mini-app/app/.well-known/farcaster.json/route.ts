@@ -5,7 +5,7 @@ export const dynamic = "force-dynamic";
 export async function GET() {
   const appUrl = process.env.NEXT_PUBLIC_URL;
   const accountAssociation = JSON.parse(
-    process.env.NEXT_PUBLIC_ACCOUNT_ASSOCIATION ??
+    process.env.ACCOUNT_ASSOCIATION ??
       JSON.stringify({
         header: "",
         payload: "",
@@ -13,7 +13,7 @@ export async function GET() {
       })
   );
   const baseBuilder = JSON.parse(
-    process.env.NEXT_PUBLIC_BASE_BUILDER ??
+    process.env.BASE_BUILDER ??
       JSON.stringify({
         allowedAddresses: [],
       })

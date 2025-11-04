@@ -6,7 +6,6 @@
 }:
 let
   cfg = config.services.xnode-miniapp-template;
-  xnode-miniapp-template = pkgs.callPackage ./package.nix { };
 in
 {
   options = {
@@ -104,11 +103,15 @@ in
         HOSTNAME = cfg.hostname;
         PORT = toString cfg.port;
         NEXT_PUBLIC_URL = cfg.url;
-        NEXT_PUBLIC_ACCOUNT_ASSOCIATION = builtins.toJSON cfg.accountAssociation;
-        NEXT_PUBLIC_BASE_BUILDER = builtins.toJSON cfg.baseBuilder;
+        ACCOUNT_ASSOCIATION = builtins.toJSON cfg.accountAssociation;
+        BASE_BUILDER = builtins.toJSON cfg.baseBuilder;
       };
       serviceConfig = {
-        ExecStart = "${lib.getExe xnode-miniapp-template}";
+        ExecStart = "${lib.getExe (
+          pkgs.callPackage ./package.nix {
+            NEXT_PUBLIC_URL = cfg.url;
+          }
+        )}";
         User = "xnode-miniapp-template";
         Group = "xnode-miniapp-template";
         CacheDirectory = "mini-app";

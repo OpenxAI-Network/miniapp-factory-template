@@ -1,8 +1,13 @@
-{ pkgs, lib }:
+{
+  pkgs,
+  lib,
+  NEXT_PUBLIC_URL,
+}:
 pkgs.buildNpmPackage {
   pname = "xnode-miniapp-template";
   version = "1.0.0";
   src = ../mini-app;
+  NEXT_PUBLIC_URL = NEXT_PUBLIC_URL;
 
   npmDeps = pkgs.importNpmLock {
     npmRoot = ../mini-app;
