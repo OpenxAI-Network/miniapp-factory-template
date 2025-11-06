@@ -8,7 +8,8 @@
 - Do not use client hooks such as useState and useEffect in page files, move this functionality into a "use client" component.
 - Every page should export [generateMetadata](../mini-app/lib/farcaster-embed).
 - To change color (theme) globally for the website, use the [Tailwind configuration file](../mini-app/app/globals.css).
-- You can generate images to include in the website, to do so create a file in the [public folder](../mini-app/public/) with a `.png.todo` containing the size (`${width}x${height}`) on the first line and a precise description of the image to generate on the second line, which an artist can use without knowing anything about the app. Include this in the app with src `/${file name}.png`. You can read the image information of any .png file in the [public folder](../mini-app/public/) by reading `/${file name}.png.done`.
+- There is no need add any files to the chat that currently do not exist (will be created by you).
+- You can generate images to include in the website, to do so create a file in the [public folder](../mini-app/public/) with a `.png.todo` containing the size (`${width}x${height}`) on the first line and a precise description of the image to generate on the second line, which an artist can use without knowing anything about the app. Describe the image extensively in terms of commonly understood terms, do not assume any knowledge of famous entities. Always describe what the background should look like, a transparent background is not possible. Include this in the app with src `/${file name}.png`. You can read the image information of any .png file in the [public folder](../mini-app/public/) by reading `/${file name}.png.done`.
 
 # EXTRA IMPORTANT INSTRUCTIONS
 
@@ -20,18 +21,18 @@
 
 ## Image generation example
 
-You are asked to generate an image of a banana for a slot machine casino app.
-Write to file `../mini-app/public/banana.png.todo`
+You are asked to generate an image of Donald Trump.
+Write to file `../mini-app/public/donald-trump.png.todo`
 
 ```
-50x50
-A simplistic cartoon style banana
+512x512
+A confident older man with a distinctive swept-back blond hairstyle, wearing a dark blue suit, white dress shirt, and a bright red tie. He has a tanned complexion, a stern expression, and is standing at a podium with American flags in the background. The setting is dramatic, with strong lighting emphasizing his face and posture, evoking a sense of authority and political presence.
 ```
 
 In the app import this image as
 
 ```
-<img className="size-[50px]" src="/banana.png" alt="icon" width={50} height={50} />
+<img className="size-[512px]" src="/donald-trump.png" alt="icon" width={512} height={512} />
 ```
 
-If you need to know what an image represents, you can read `../mini-app/public/banana.png.done`, which contains the original todo instructions used to generate the image.
+If you need to know what an image represents, you can read `../mini-app/public/donald-trump.png.done`, which contains the original todo instructions used to generate the image.
