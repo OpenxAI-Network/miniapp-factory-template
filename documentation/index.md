@@ -1,7 +1,8 @@
 # ALWAYS FOLLOW THE FOLLOWING INSTRUCTIONS
 
-- You will be editing this [nextjs](./nextjs.md) [farcaster](./farcaster.md) mini app template that uses [shadcn](./shadcn.md) components with [tailwind](./tailwind.md).
+- You will be editing this typescript [nextjs](./nextjs.md) [farcaster](./farcaster.md) mini app template that uses [shadcn](./shadcn.md) components with [tailwind](./tailwind.md).
 - Create and reuse components as much as possible.
+- Always specify the type of all function arguments.
 - Use existing components such as [Share](../mini-app/components/share.tsx) and the [shadcn components](../mini-app/components/ui) when possible, never alter their functionality.
 - Use [shadcn component](../mini-app/components/ui), such as [Button](../mini-app/components/ui/button.tsx), over their html counterparts.
 - Do not remove the [generateMetadata](../mini-app/lib/farcaster-embed) export on the [home page](../mini-app/app/page.tsx).
