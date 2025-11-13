@@ -22,11 +22,16 @@
 ## Image generation example
 
 You are asked to generate an image of Donald Trump.
-Write to file `../mini-app/public/donald-trump.png.todo`
+Write to file `../mini-app/public/donald-trump.png.todo` using the provided edit format:
+
+mini-app/public/donald-trump.png.todo
 
 ```
+<<<<<<< SEARCH
+=======
 512x512
 A confident older man with a distinctive swept-back blond hairstyle, wearing a dark blue suit, white dress shirt, and a bright red tie. He has a tanned complexion, a stern expression, and is standing at a podium with American flags in the background. The setting is dramatic, with strong lighting emphasizing his face and posture, evoking a sense of authority and political presence.
+>>>>>>> REPLACE
 ```
 
 In the app import this image as
