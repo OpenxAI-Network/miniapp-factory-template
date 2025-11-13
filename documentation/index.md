@@ -16,7 +16,7 @@
 - ALWAYS include the [url](../mini-app/lib/metadata.ts) into the `text` property string of the share component.
 - ALWAYS add the new functionality to the [home page](../mini-app/app/page.tsx).
 - ALWAYS ensure that the [title and description](../mini-app/lib/metadata.ts) represent the current functionality of the app.
-- ALWAYS use the [app metadata](../mini-app/lib/metadata.ts) to generate an app icon by writing to the [icon image generation file](../mini-app/public/icon.png.todo).
+- ALWAYS use the [app metadata](../mini-app/lib/metadata.ts) to generate an app logo by writing to the [logo image generation file](../mini-app/public/logo.png.todo).
 - ALWAYS perform the request to the best of your abilities and commit something, do not wait for answers to follow up questions.
 
 ## Image generation example
@@ -37,7 +37,7 @@ A confident older man with a distinctive swept-back blond hairstyle, wearing a d
 In the app import this image as
 
 ```
-<img className="size-[512px]" src="/donald-trump.png" alt="icon" width={512} height={512} />
+<img className="size-[512px]" src="/donald-trump.png" alt="Donald Trump" width={512} height={512} />
 ```
 
 If you need to know what an image represents, you can read `../mini-app/public/donald-trump.png.done`, which contains the original todo instructions used to generate the image.

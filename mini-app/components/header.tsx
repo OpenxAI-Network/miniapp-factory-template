@@ -20,8 +20,8 @@ const pages = [
       <div className="flex place-items-center gap-2">
         <img
           className="size-[40px]"
-          src="/icon.png"
-          alt="icon"
+          src="/logo.png"
+          alt="logo"
           width={40}
           height={40}
         />

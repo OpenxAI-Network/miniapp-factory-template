@@ -24,9 +24,9 @@ export async function GET() {
     miniapp: {
       version: "1",
       name: title,
-      iconUrl: `${url}/icon.png`,
+      iconUrl: `${url}/logo.png`,
       homeUrl: url,
-      imageUrl: `${url}/icon.png`,
+      imageUrl: `${url}/logo.png`,
       buttonTitle: "Launch Mini App",
       splashImageUrl: `${url}/ico.png`,
       splashBackgroundColor: "#000000",

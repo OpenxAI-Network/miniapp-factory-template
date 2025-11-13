@@ -6,6 +6,6 @@ export async function GET() {
   return Response.json({
     name: title,
     description: description,
-    image: `${url}/icon.png`,
+    image: `${url}/logo.png`,
   });
 }
