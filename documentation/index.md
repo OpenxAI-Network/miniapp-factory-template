@@ -44,3 +44,14 @@ In the app import this image as
 ```
 
 If you need to know what an image represents, you can read `../mini-app/public/donald-trump.png.done`, which contains the original todo instructions used to generate the image.
+
+## Share example
+
+```
+import { Share } from "@/components/share";
+import { url } from "@/lib/metadata";
+```
+
+```
+<Share text={`Example text ${url}`} />
+```
