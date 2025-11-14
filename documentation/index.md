@@ -8,11 +8,11 @@
 - Do not remove the [generateMetadata](../mini-app/lib/farcaster-embed) export on the [home page](../mini-app/app/page.tsx).
 - To change color (theme) globally for the website, alter the [Tailwind configuration file](../mini-app/app/globals.css) and all [shadcn components](../mini-app/components/ui).
 - The [shadcn components](../mini-app/components/ui) should only be edited when asked to change the design of the entire app.
-- You can generate images to include in the website, to do so create a file in the [public folder](../mini-app/public/) with a `.png.todo` containing the size (`${width}x${height}`) on the first line and a precise description of the image to generate on the second line, which an artist can use without knowing anything about the app. Describe the image extensively in terms of commonly understood terms, do not assume any knowledge of famous entities. Always describe what the background should look like, a transparent background is not possible. Never ask for the image to look like or be suitable as an icon. Include this in the app with src `/${file name}.png`. You can read the image information of any .png file in the [public folder](../mini-app/public/) by reading `/${file name}.png.done`.
+- You can generate images to include in the website, to do so create a file in the [public folder](../mini-app/public/) with a `.png.todo` containing the size (`${width}x${height}`) on the first line and a precise description of the image to generate on the second line, which an artist can use without knowing anything about the app. Describe the image extensively in terms of commonly understood terms, do not assume any knowledge of famous entities. Always describe what the background should look like, a transparent background is not possible. Never ask for the image to look like or be suitable as a (mobile app) icon. Include this in the app with src `/${file name}.png`. You can read the image information of any .png file in the [public folder](../mini-app/public/) by reading `/${file name}.png.done`.
 
 # EXTRA IMPORTANT INSTRUCTIONS
 
-- NEVER add any files that will be created by you.
+- NEVER ask for files to be added if you'll create them. If you ask for them to be added, you will be ignored, but you are able to write to these files.
 - NEVER mark [page files](../mini-app/app) as "use client", nor use hooks such as `useState` and `useEffect`. Instead move this functionality into a "use client" [component](../mini-app/components).
 - ALWAYS include the [url](../mini-app/lib/metadata.ts) into the `text` property string of the share component.
 - ALWAYS add the new functionality to the [home page](../mini-app/app/page.tsx).
