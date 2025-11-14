@@ -12,8 +12,10 @@
 
 # EXTRA IMPORTANT INSTRUCTIONS
 
-- NEVER ask for files to be added if you'll create them. If you ask for them to be added, you will be ignored, but you are able to write to these files.
-- NEVER mark [page files](../mini-app/app) as "use client", nor use hooks such as `useState` and `useEffect`. Instead move this functionality into a "use client" [component](../mini-app/components).
+- ONLY ask for existing files to edit to be added to the chat.
+- NEVER ask for new files to be added to the chat. If you ask for them to be added, you will be ignored, but you are able to write to these files.
+- NEVER mark the [home page](../mini-app/app) as "use client" or use hooks such as `useState` and `useEffect` in it. Instead write this functionality into a "use client" [component](../mini-app/components).
+- NEVER create a [server file](../mini-app/app/page.server.tsx), this file will be ignored.
 - ALWAYS include the [url](../mini-app/lib/metadata.ts) into the `text` property string of the share component.
 - ALWAYS add the new functionality to the [home page](../mini-app/app/page.tsx).
 - ALWAYS ensure that the [title and description](../mini-app/lib/metadata.ts) represent the current functionality of the app.
